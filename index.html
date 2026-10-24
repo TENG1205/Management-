@@ -1,0 +1,1692 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10172b"><title>Management Exam Prep · IIM3113</title><style>
+:root{--bg:#f4f6fa;--card:#fff;--fg:#18233d;--muted:#65748b;--line:#e2e8f1;--accent:#3458d4;--light:#edf1ff;--good:#187d67;--bad:#b34e49;--shadow:0 9px 30px #1727440c;color-scheme:light}body.dark{--bg:#0e1422;--card:#1a2436;--fg:#e9eef9;--muted:#a3b1c8;--line:#324158;--accent:#98b1ff;--light:#283454;--good:#65d5b9;--bad:#ff9890;--shadow:none;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer}header{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);z-index:2;padding:13px max(18px,env(safe-area-inset-left));display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{font-size:17px;font-weight:850;letter-spacing:-.4px}.sub{font-size:12px;color:var(--muted)}.container{max-width:1000px;margin:auto;padding:20px 18px 110px}.hero{background:linear-gradient(115deg,#243b89,#111c3f);color:#fff;border-radius:20px;padding:24px;display:flex;justify-content:space-between;gap:12px;align-items:center}.hero h1{font-size:26px;line-height:1.2;margin:5px 0}.hero .sub{color:#c7d5ff}.count{font-size:38px;font-weight:900;text-align:center;line-height:1.05}h2{font-size:19px;margin:24px 0 12px}h3{margin:0 0 8px;font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.two{grid-template-columns:repeat(2,1fr)}.card,.question,.filters{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:var(--shadow)}.stat{font-size:28px;font-weight:800}.hint,.small{color:var(--muted);font-size:13px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.stack{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:11px 15px;border-radius:11px;font-weight:680}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}body.dark .btn.primary{color:#0e1422}.btn.ghost{background:var(--light);border:0}.btn:disabled{opacity:.45;cursor:default}.pill{padding:3px 9px;border-radius:40px;background:var(--light);font-size:12px;color:var(--accent);font-weight:750}.alert{border-left:3px solid var(--accent);padding:12px 15px;background:var(--card);border-radius:8px;margin:14px 0;color:var(--muted);font-size:13px}.progress{background:var(--line);height:8px;border-radius:99px;overflow:hidden;margin:10px 0}.progress>i{display:block;height:100%;background:var(--good);border-radius:inherit}.chapters{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.chapter{cursor:pointer}.chapter:hover{border-color:var(--accent)}nav{position:fixed;bottom:0;left:0;right:0;z-index:5;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 5px max(10px,env(safe-area-inset-bottom))}nav button{border:0;background:none;color:var(--muted);font-size:11px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:58px}nav button.active{color:var(--accent);font-weight:800}nav b{font-size:19px}section.page{display:none}section.page.active{display:block}.filters{margin:14px 0}.checks{display:flex;flex-wrap:wrap;gap:7px}.checks label{border:1px solid var(--line);padding:6px 10px;border-radius:30px;font-size:13px}.control{display:flex;flex-direction:column;gap:5px;margin:12px 0}.control input:not([type=checkbox]),.control select,.control textarea,.input{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;background:var(--card);color:var(--fg)}textarea{min-height:145px;resize:vertical}.question{margin:16px 0}.term{font-size:clamp(24px,6vw,35px);font-weight:800;line-height:1.23;margin:14px 0}.english{font-size:17px;line-height:1.65}.tagline{font-size:12px;color:var(--muted);margin:7px 0}.flip{min-height:205px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer;border:1px dashed var(--accent);border-radius:15px;background:var(--light);padding:20px}.feedback{background:var(--light);padding:13px;border-radius:12px;margin-top:12px}.feedback strong{color:var(--good)}.warn{color:var(--bad)}.library-row{padding:13px 0;border-bottom:1px solid var(--line)}.library-row:last-child{border:0}details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);margin:8px 0}summary{font-weight:750;cursor:pointer}table{border-collapse:collapse;width:100%;font-size:13px;min-width:550px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--light)}.tablewrap{overflow-x:auto}.notice{font-size:13px;padding:14px;border-radius:12px;background:var(--light)}.muted{color:var(--muted)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.empty{padding:35px 10px;text-align:center;color:var(--muted)}input[type=checkbox]{accent-color:var(--accent)}@media(max-width:630px){.grid,.chapters,.grid.two{grid-template-columns:1fr}.hero{align-items:flex-start}.count{font-size:31px}.container{padding:15px 13px 110px}header{padding:11px 13px}h2{margin-top:20px}.btn{padding:10px 12px}.hero h1{font-size:21px}}
+</style><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Management"><meta name="description" content="IIM3113 管理學英文名詞、默寫與錯題循環複習"></head><body><header><div><div class="brand">MANAGEMENT <span style="color:var(--accent)">/ EXAM PREP</span></div><div class="sub">IIM3113 · Chapters 1, 2, 3, 4, 5, 7 · 離線複習</div></div><button class="btn" id="themeBtn" aria-label="切換深色模式">◐ 主題</button></header><main class="container">
+<section class="page active" id="home"><div class="hero"><div><div class="sub">期中考 · 2026 / 10 / 29</div><h1>把看得懂，練成寫得出來。</h1><div class="sub">名詞優先 · 英文輸出 · 錯題循環</div></div><div><div class="count" id="days">—</div><div class="sub" style="text-align:center">天後考試</div></div></div><div class="alert" id="dataInfo"></div><div class="grid" id="summary"></div><h2>開始複習</h2><div class="grid"><button class="btn primary" data-go="flash" data-mode="flash">3 分鐘｜閃卡</button><button class="btn" data-go="quiz" data-mode="quiz">5 分鐘｜英文默寫</button><button class="btn" data-go="quiz" data-mode="mix">10 分鐘｜混合練習</button></div><h2>各章熟練度</h2><div class="chapters" id="chapterStats"></div><h2>15–20 分鐘筆答</h2><div class="card"><div class="small">英文簡答／長答架構練習</div><p>先說明定義，再列出正確術語、構成要素與比較，最後用一個例子應用。</p><button class="btn" data-go="notes">開啟考題與章節筆記 →</button></div></section>
+<section class="page" id="flash"><h2>名詞閃卡 <span class="pill" id="flashCount"></span></h2><div id="flashFilters"></div><div class="row"><span class="small" id="flashPos"></span><button class="btn" id="shuffleFlash">重新排序</button></div><div class="question"><div id="flashCard" class="flip" tabindex="0" role="button"></div><div class="row" style="margin-top:14px"><button class="btn" id="prevFlash">← 上一張</button><div class="stack"><button class="btn" id="markWeak">看得懂／待默寫</button><button class="btn primary" id="nextFlash">下一張 →</button></div></div><div class="hint" style="margin-top:10px">閃卡翻面不算熟練；須通過英文打字測驗才會列為已熟練。</div></div></section>
+<section class="page" id="quiz"><h2>英文打字測驗 <span class="pill" id="quizCount"></span></h2><div id="quizFilters"></div><div class="toolbar"><button class="btn" id="newQuiz">換一題</button><span class="small" id="quizMeta"></span></div><div class="question" id="quizArea"></div></section>
+<section class="page" id="library"><h2>名詞庫</h2><div id="libFilters"></div><div class="control"><input id="searchTerm" placeholder="搜尋英文名詞、定義、中文關鍵字"></div><div class="row"><span class="small" id="libCount"></span><button class="btn" id="expandLibrary">顯示全部定義</button></div><div class="card" id="libraryRows"></div></section>
+<section class="page" id="notes"><h2>章節架構・簡答與長答</h2><div id="notesBody"></div></section>
+<section class="page" id="review"><h2>錯題循環與學習統計</h2><div class="grid" id="reviewStats"></div><h2>需要再練習的名詞</h2><div class="card" id="wrongRows"></div><h2>備份與題庫管理</h2><div class="card"><p class="small">資料儲存在這台裝置的瀏覽器。Safari 清除網站資料或以不同方式開啟本地 HTML，可能導致 localStorage 無法共用。請定期匯出備份。</p><div class="stack"><button class="btn primary" id="exportBtn">匯出 JSON 備份</button><label class="btn" for="importInput">匯入 JSON 備份</label><input type="file" accept="application/json,.json" id="importInput" style="display:none"></div><hr style="border:0;border-top:1px solid var(--line);margin:18px 0"><div class="control"><label>額外題庫匯入（JSON 陣列，將標示為學長筆記或 AI 補充；需有來源）</label><input type="file" accept="application/json,.json" id="bankInput"></div><label><input type="checkbox" id="includeAI"> 將 AI 補充題納入練習與統計</label><div class="tagline" id="sourceCounts"></div><div class="row"><button class="btn" id="resetBtn">清除本機練習紀錄</button><span class="small">無帳號與存取控制</span></div></div></section>
+</main><nav id="nav"><button data-go="home" class="active"><b>⌂</b>首頁</button><button data-go="flash"><b>▣</b>閃卡</button><button data-go="quiz"><b>✎</b>默寫</button><button data-go="library"><b>☷</b>名詞庫</button><button data-go="notes"><b>◇</b>筆記</button><button data-go="review"><b>↻</b>錯題</button></nav>
+<script>const BASE=[
+  {
+    "id": "c1-001",
+    "chapter": 1,
+    "term": "Management",
+    "original": "Management is the planning, organizing, leading, and controlling of human and other resources to achieve organizational goals efficiently and effectively.",
+    "short": "Planning, organizing, leading, and controlling resources to achieve organizational goals efficiently and effectively.",
+    "zh": "管理是透過規劃、組織、領導與控制資源，以有效率且有效能地達成目標。",
+    "groups": [
+      [
+        "planning"
+      ],
+      [
+        "organizing"
+      ],
+      [
+        "leading"
+      ],
+      [
+        "controlling"
+      ],
+      [
+        "goals",
+        "objectives"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "6"
+  },
+  {
+    "id": "c1-002",
+    "chapter": 1,
+    "term": "Efficiency",
+    "original": "How productively are resources and time used?",
+    "short": "Using resources and time productively while minimizing waste.",
+    "zh": "效率：資源投入與成果的關係；重點在於減少浪費。",
+    "groups": [
+      [
+        "resources",
+        "inputs"
+      ],
+      [
+        "productively",
+        "productive",
+        "waste",
+        "efficient"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7"
+  },
+  {
+    "id": "c1-003",
+    "chapter": 1,
+    "term": "Effectiveness",
+    "original": "Are the goals appropriate—and are they achieved?",
+    "short": "Choosing appropriate goals and achieving them.",
+    "zh": "效能：選對目標並真正完成。",
+    "groups": [
+      [
+        "appropriate goals",
+        "right goals",
+        "desired goals"
+      ],
+      [
+        "achieve",
+        "accomplish",
+        "attain"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7"
+  },
+  {
+    "id": "c1-004",
+    "chapter": 1,
+    "term": "Planning",
+    "original": "Planning chooses direction.",
+    "short": "Choosing organizational goals and courses of action to achieve them.",
+    "zh": "規劃：決定目標與達成目標的行動方向。",
+    "groups": [
+      [
+        "goals",
+        "objectives"
+      ],
+      [
+        "courses of action",
+        "strategy",
+        "actions",
+        "plans"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8–9"
+  },
+  {
+    "id": "c1-005",
+    "chapter": 1,
+    "term": "Organizing",
+    "original": "Organizing configures work.",
+    "short": "Structuring tasks, authority, and resources to achieve organizational goals.",
+    "zh": "組織：配置任務、權責與資源。",
+    "groups": [
+      [
+        "tasks",
+        "work"
+      ],
+      [
+        "authority",
+        "responsibility"
+      ],
+      [
+        "resources",
+        "people"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8–9"
+  },
+  {
+    "id": "c1-006",
+    "chapter": 1,
+    "term": "Leading",
+    "original": "Leading mobilizes people.",
+    "short": "Motivating, coordinating, and influencing people to achieve organizational goals.",
+    "zh": "領導：激勵、協調並影響成員。",
+    "groups": [
+      [
+        "motivate",
+        "motivating",
+        "inspire"
+      ],
+      [
+        "coordinate",
+        "coordinating",
+        "influence",
+        "influencing"
+      ],
+      [
+        "people",
+        "employees",
+        "members"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8–10"
+  },
+  {
+    "id": "c1-007",
+    "chapter": 1,
+    "term": "Controlling",
+    "original": "Controlling measures and corrects.",
+    "short": "Measuring performance, comparing it with goals, and taking corrective action.",
+    "zh": "控制：衡量績效、對照標準並修正。",
+    "groups": [
+      [
+        "measure",
+        "measuring",
+        "monitor"
+      ],
+      [
+        "performance",
+        "results"
+      ],
+      [
+        "corrective action",
+        "correct",
+        "adjust"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8–10"
+  },
+  {
+    "id": "c1-008",
+    "chapter": 1,
+    "term": "Decisional roles",
+    "original": "Entrepreneur · Disturbance handler · Resource allocator · Negotiator",
+    "short": "Managerial roles involving decisions: entrepreneur, disturbance handler, resource allocator, and negotiator.",
+    "zh": "Mintzberg 決策性角色共四種。",
+    "groups": [
+      [
+        "entrepreneur"
+      ],
+      [
+        "disturbance handler"
+      ],
+      [
+        "resource allocator"
+      ],
+      [
+        "negotiator"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c1-009",
+    "chapter": 1,
+    "term": "Interpersonal roles",
+    "original": "Figurehead · Leader · Liaison",
+    "short": "Managerial roles that involve relationships: figurehead, leader, and liaison.",
+    "zh": "人際角色：代表人物、領導者、聯絡者。",
+    "groups": [
+      [
+        "figurehead"
+      ],
+      [
+        "leader"
+      ],
+      [
+        "liaison"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c1-010",
+    "chapter": 1,
+    "term": "Informational roles",
+    "original": "Monitor · Disseminator · Spokesperson",
+    "short": "Managerial roles for acquiring and communicating information: monitor, disseminator, and spokesperson.",
+    "zh": "資訊角色：監控者、傳播者、發言人。",
+    "groups": [
+      [
+        "monitor"
+      ],
+      [
+        "disseminator"
+      ],
+      [
+        "spokesperson"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c1-011",
+    "chapter": 1,
+    "term": "Conceptual skills",
+    "original": "Diagnose situations, distinguish cause from effect, and see the larger system.",
+    "short": "The ability to analyze complex situations and see the organization as a whole.",
+    "zh": "概念技能：理解整體系統、分析問題及因果。",
+    "groups": [
+      [
+        "analyze",
+        "diagnose",
+        "understand"
+      ],
+      [
+        "organization as a whole",
+        "larger system",
+        "big picture",
+        "complex situations"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c1-012",
+    "chapter": 1,
+    "term": "Human skills",
+    "original": "Understand, communicate with, motivate, coordinate, and build cohesive groups.",
+    "short": "The ability to communicate, motivate, and work effectively with people.",
+    "zh": "人際技能：與人溝通、協作及激勵。",
+    "groups": [
+      [
+        "communicate"
+      ],
+      [
+        "motivate",
+        "work with",
+        "coordinate"
+      ],
+      [
+        "people",
+        "employees"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c1-013",
+    "chapter": 1,
+    "term": "Technical skills",
+    "original": "Apply the job-specific knowledge and techniques needed to perform and supervise work.",
+    "short": "Job-specific knowledge and techniques used to perform tasks.",
+    "zh": "技術技能：工作所需的專門知識與技術。",
+    "groups": [
+      [
+        "job-specific",
+        "specialized",
+        "specific"
+      ],
+      [
+        "knowledge",
+        "skills",
+        "techniques"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c1-014",
+    "chapter": 1,
+    "term": "Restructuring",
+    "original": "Simplify or downsize operations, jobs, teams, departments, or hierarchical levels inside the organization.",
+    "short": "Redesigning or downsizing internal organizational operations and structures.",
+    "zh": "組織再造：調整公司內部單位與層級。",
+    "groups": [
+      [
+        "redesign",
+        "downsize",
+        "reorganize",
+        "simplify"
+      ],
+      [
+        "internal",
+        "within the organization",
+        "organizational structure"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "23"
+  },
+  {
+    "id": "c1-015",
+    "chapter": 1,
+    "term": "Outsourcing",
+    "original": "Contract an activity formerly performed internally to another organization, moving work across the firm boundary.",
+    "short": "Contracting an internal activity to an outside organization.",
+    "zh": "委外：把原本內部完成的工作交給外部組織。",
+    "groups": [
+      [
+        "contract",
+        "external",
+        "outside"
+      ],
+      [
+        "activity",
+        "task",
+        "work"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "23"
+  },
+  {
+    "id": "c1-016",
+    "chapter": 1,
+    "term": "Employee empowerment",
+    "original": "More knowledge, tasks, and decision responsibility.",
+    "short": "Giving employees greater authority and responsibility to make work decisions.",
+    "zh": "員工賦權：將決策權與責任下放。",
+    "groups": [
+      [
+        "employees"
+      ],
+      [
+        "authority",
+        "decision",
+        "power"
+      ],
+      [
+        "responsibility"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "25"
+  },
+  {
+    "id": "c2-001",
+    "chapter": 2,
+    "term": "Scientific management",
+    "original": "Systematic study of people–task relationships to redesign work for efficiency.",
+    "short": "Systematically studying tasks and workers to improve work efficiency.",
+    "zh": "科學管理：以系統化研究改善工作方法與效率。",
+    "groups": [
+      [
+        "systematic",
+        "scientific"
+      ],
+      [
+        "tasks",
+        "work"
+      ],
+      [
+        "efficiency",
+        "productivity"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "9"
+  },
+  {
+    "id": "c2-002",
+    "chapter": 2,
+    "term": "Job specialization",
+    "original": "Job specialization divides labor so different workers concentrate on different tasks over time.",
+    "short": "Dividing work into specialized tasks performed by different workers.",
+    "zh": "工作專業化：分工後讓不同人專注於特定任務。",
+    "groups": [
+      [
+        "divide",
+        "division",
+        "specialized"
+      ],
+      [
+        "tasks",
+        "labor",
+        "work"
+      ],
+      [
+        "workers",
+        "employees"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7–8"
+  },
+  {
+    "id": "c2-003",
+    "chapter": 2,
+    "term": "Taylor’s four principles",
+    "original": "Study and experiment; Codify improved methods; Fit and train; Set standards and share gains.",
+    "short": "Study tasks, standardize improved methods, select and train workers, and share performance gains.",
+    "zh": "泰勒四項：研究、標準化、選訓、分享成果。",
+    "groups": [
+      [
+        "study",
+        "experiment",
+        "observe"
+      ],
+      [
+        "codify",
+        "standardize",
+        "document"
+      ],
+      [
+        "select",
+        "train",
+        "fit"
+      ],
+      [
+        "share",
+        "reward",
+        "gains"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "9–11"
+  },
+  {
+    "id": "c2-004",
+    "chapter": 2,
+    "term": "Administrative management",
+    "original": "How should the organization arrange task and authority relationships so people use resources toward shared goals?",
+    "short": "Designing organizational structures and authority relationships to achieve goals.",
+    "zh": "行政管理：重點是整體組織的職務與權責設計。",
+    "groups": [
+      [
+        "organizational",
+        "organization"
+      ],
+      [
+        "structure",
+        "tasks"
+      ],
+      [
+        "authority"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "14"
+  },
+  {
+    "id": "c2-005",
+    "chapter": 2,
+    "term": "Bureaucracy",
+    "original": "Bureaucracy is intended to make administration formal, predictable, and impersonal.",
+    "short": "A formal system of rules, positions, and authority for predictable administration.",
+    "zh": "科層制度：以職位、規則和權限維持可預測的運作。",
+    "groups": [
+      [
+        "formal",
+        "rules"
+      ],
+      [
+        "positions",
+        "hierarchy",
+        "authority"
+      ],
+      [
+        "predictable",
+        "impersonal"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "16–18"
+  },
+  {
+    "id": "c2-006",
+    "chapter": 2,
+    "term": "Fayol’s 14 principles",
+    "original": "Division of labor, authority and responsibility, discipline, unity of command, unity of direction, subordination of individual interests, remuneration, centralization, line of authority, order, equity, stability of tenure, initiative, esprit de corps.",
+    "short": "Four design concerns: work design, authority, coordinated direction, and employee commitment.",
+    "zh": "Fayol 十四原則：簡報以工作、權力、協調方向與承諾四群整理；精簡版是架構摘要，不是逐條完整答案。",
+    "groups": [
+      [
+        "division of labor",
+        "work design"
+      ],
+      [
+        "authority"
+      ],
+      [
+        "unity of direction",
+        "coordination"
+      ],
+      [
+        "equity",
+        "commitment",
+        "initiative",
+        "esprit de corps"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "19"
+  },
+  {
+    "id": "c2-007",
+    "chapter": 2,
+    "term": "Hawthorne effect",
+    "original": "A manager’s behavior, leadership approach, or the attention embedded in a study can affect worker performance.",
+    "short": "Worker performance can change when people receive managerial or research attention.",
+    "zh": "霍桑效應：工作表現可能受被關注及管理者行為影響，不能過度簡化成唯一因果。",
+    "groups": [
+      [
+        "attention",
+        "observed",
+        "manager"
+      ],
+      [
+        "performance",
+        "behavior",
+        "productivity"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "26"
+  },
+  {
+    "id": "c2-008",
+    "chapter": 2,
+    "term": "Informal organization",
+    "original": "The informal organization is the system of behavioral rules and norms that emerges within a group.",
+    "short": "Unwritten behavioral rules and group norms that arise informally.",
+    "zh": "非正式組織：群體自然形成的規範與行為方式。",
+    "groups": [
+      [
+        "informal",
+        "unwritten",
+        "emerge"
+      ],
+      [
+        "group",
+        "members"
+      ],
+      [
+        "norms",
+        "rules"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "27"
+  },
+  {
+    "id": "c2-009",
+    "chapter": 2,
+    "term": "Theory X",
+    "original": "Workers avoid work and responsibility; managers respond with close supervision, rules, rewards, and punishment.",
+    "short": "Assumes employees dislike work and require close supervision and control.",
+    "zh": "X 理論：假設員工逃避工作，需要嚴格控制。",
+    "groups": [
+      [
+        "avoid",
+        "dislike"
+      ],
+      [
+        "work"
+      ],
+      [
+        "supervision",
+        "control"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "28"
+  },
+  {
+    "id": "c2-010",
+    "chapter": 2,
+    "term": "Theory Y",
+    "original": "Committed employees can self-direct; managers create opportunity, resources, and decentralized authority.",
+    "short": "Assumes employees can be self-directed and take responsibility when supported.",
+    "zh": "Y 理論：員工能自我管理並願意承擔責任。",
+    "groups": [
+      [
+        "self-direct",
+        "self-control",
+        "self-motivated"
+      ],
+      [
+        "responsibility"
+      ],
+      [
+        "support",
+        "opportunity",
+        "authority"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "28"
+  },
+  {
+    "id": "c3-001",
+    "chapter": 3,
+    "term": "Personality trait",
+    "original": "An enduring tendency to feel, think, and act in a particular way.",
+    "short": "An enduring tendency in how a person thinks, feels, and behaves.",
+    "zh": "人格特質：相對持久的思考、感受與行為傾向。",
+    "groups": [
+      [
+        "enduring",
+        "stable",
+        "lasting"
+      ],
+      [
+        "think",
+        "thoughts"
+      ],
+      [
+        "feel",
+        "emotions"
+      ],
+      [
+        "act",
+        "behave"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7"
+  },
+  {
+    "id": "c3-002",
+    "chapter": 3,
+    "term": "Big Five personality traits",
+    "original": "Extraversion; negative affectivity; agreeableness; conscientiousness; openness to experience.",
+    "short": "Five dimensions: extraversion, negative affectivity, agreeableness, conscientiousness, and openness to experience.",
+    "zh": "五大人格特質：外向性、負面情感傾向、親和性、盡責性、經驗開放性。",
+    "groups": [
+      [
+        "extraversion"
+      ],
+      [
+        "negative affectivity",
+        "neuroticism"
+      ],
+      [
+        "agreeableness"
+      ],
+      [
+        "conscientiousness"
+      ],
+      [
+        "openness"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "9"
+  },
+  {
+    "id": "c3-003",
+    "chapter": 3,
+    "term": "Internal locus of control",
+    "original": "Attribute outcomes to one’s own actions and accept responsibility for decisions.",
+    "short": "Believing one’s actions can influence outcomes.",
+    "zh": "內控：認為結果可以受自己的努力和決策影響。",
+    "groups": [
+      [
+        "own actions",
+        "personal actions",
+        "my actions"
+      ],
+      [
+        "outcomes",
+        "results",
+        "control",
+        "influence"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c3-004",
+    "chapter": 3,
+    "term": "External locus of control",
+    "original": "Attribute outcomes to forces beyond oneself.",
+    "short": "Believing outcomes are mainly controlled by external forces.",
+    "zh": "外控：認為結果主要取決於外部因素。",
+    "groups": [
+      [
+        "outcomes",
+        "results"
+      ],
+      [
+        "external",
+        "outside",
+        "beyond oneself"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c3-005",
+    "chapter": 3,
+    "term": "Terminal values",
+    "original": "A lifelong goal or objective a person seeks to achieve.",
+    "short": "Desired end goals in life.",
+    "zh": "終極價值：希望最終達成的人生目標。",
+    "groups": [
+      [
+        "end",
+        "goal",
+        "objective"
+      ],
+      [
+        "life",
+        "desired",
+        "achieve"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c3-006",
+    "chapter": 3,
+    "term": "Instrumental values",
+    "original": "A preferred way of behaving while pursuing an end.",
+    "short": "Preferred ways of behaving to achieve goals.",
+    "zh": "工具性價值：追求目標時偏好的行為方式。",
+    "groups": [
+      [
+        "preferred",
+        "desirable"
+      ],
+      [
+        "behavior",
+        "conduct",
+        "way of behaving"
+      ],
+      [
+        "goals",
+        "ends"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c3-007",
+    "chapter": 3,
+    "term": "Job satisfaction",
+    "original": "The collection of feelings and beliefs a manager has about the current job.",
+    "short": "Feelings and beliefs about one’s current job.",
+    "zh": "工作滿意：對目前工作的感受和信念。",
+    "groups": [
+      [
+        "feelings",
+        "attitudes",
+        "beliefs"
+      ],
+      [
+        "job",
+        "work"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "19"
+  },
+  {
+    "id": "c3-008",
+    "chapter": 3,
+    "term": "Organizational commitment",
+    "original": "Feelings and beliefs about the organization as a whole.",
+    "short": "Identification, loyalty, and feelings about one’s organization.",
+    "zh": "組織承諾：對組織的認同與忠誠，而非單純喜歡工作。",
+    "groups": [
+      [
+        "organization",
+        "company"
+      ],
+      [
+        "loyalty",
+        "identification",
+        "commitment",
+        "beliefs"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "20"
+  },
+  {
+    "id": "c3-009",
+    "chapter": 3,
+    "term": "Mood",
+    "original": "A diffuse state that may persist without continued attention to one cause and is usually less intense.",
+    "short": "A relatively low-intensity and diffuse feeling that lasts longer than an emotion.",
+    "zh": "心情：較廣泛、通常較持久且強度較低。",
+    "groups": [
+      [
+        "diffuse",
+        "general",
+        "broad"
+      ],
+      [
+        "longer",
+        "lasting",
+        "persist"
+      ],
+      [
+        "less intense",
+        "low intensity"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "24"
+  },
+  {
+    "id": "c3-010",
+    "chapter": 3,
+    "term": "Emotion",
+    "original": "A relatively short-lived, typically more intense response tied to a person, event, or condition.",
+    "short": "A relatively intense, short-lived feeling triggered by an event or person.",
+    "zh": "情緒：通常較強烈、時間短、有特定引發事件。",
+    "groups": [
+      [
+        "intense",
+        "strong"
+      ],
+      [
+        "short-lived",
+        "short"
+      ],
+      [
+        "event",
+        "trigger",
+        "person"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "24"
+  },
+  {
+    "id": "c3-011",
+    "chapter": 3,
+    "term": "Emotional intelligence",
+    "original": "The ability to understand and manage one’s own and other people’s moods and emotions.",
+    "short": "Understanding and managing one’s own and others’ emotions.",
+    "zh": "情緒智力：辨識與管理自身及他人的情緒。",
+    "groups": [
+      [
+        "understand",
+        "recognize",
+        "perceive"
+      ],
+      [
+        "manage",
+        "regulate"
+      ],
+      [
+        "own",
+        "self"
+      ],
+      [
+        "others",
+        "other people"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "26"
+  },
+  {
+    "id": "c4-001",
+    "chapter": 4,
+    "term": "Ethical dilemma",
+    "original": "A choice becomes difficult when helping others conflicts with self-interest, or every feasible option benefits one group while harming another.",
+    "short": "A decision involving competing moral interests or unavoidable harm.",
+    "zh": "倫理困境：不同道德要求或利害關係人利益彼此衝突。",
+    "groups": [
+      [
+        "conflict",
+        "competing",
+        "trade-offs"
+      ],
+      [
+        "moral",
+        "ethical",
+        "harm",
+        "interests"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "5"
+  },
+  {
+    "id": "c4-002",
+    "chapter": 4,
+    "term": "Stakeholders",
+    "original": "Groups supplying resources or enabling conditions to an organization and having claims affected by its actions.",
+    "short": "Groups that affect or are affected by an organization’s activities.",
+    "zh": "利害關係人：能影響公司或受到公司活動影響的群體。",
+    "groups": [
+      [
+        "groups",
+        "individuals",
+        "people"
+      ],
+      [
+        "affect",
+        "affected",
+        "stake",
+        "impact"
+      ],
+      [
+        "organization",
+        "company"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "10–11"
+  },
+  {
+    "id": "c4-003",
+    "chapter": 4,
+    "term": "Utilitarian rule",
+    "original": "Which option creates the greatest net good—or least harm?",
+    "short": "Choose the option producing the greatest overall good or least harm.",
+    "zh": "效益原則：最大整體利益或最小整體傷害。",
+    "groups": [
+      [
+        "greatest",
+        "maximum",
+        "most"
+      ],
+      [
+        "good",
+        "benefit",
+        "utility",
+        "least harm"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "18"
+  },
+  {
+    "id": "c4-004",
+    "chapter": 4,
+    "term": "Moral rights rule",
+    "original": "Which option best protects fundamental rights?",
+    "short": "Make decisions that protect people’s fundamental rights.",
+    "zh": "道德權利原則：保護人的基本權利。",
+    "groups": [
+      [
+        "protect",
+        "respect"
+      ],
+      [
+        "rights"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "18"
+  },
+  {
+    "id": "c4-005",
+    "chapter": 4,
+    "term": "Justice rule",
+    "original": "Which option distributes benefits and harms fairly and impartially?",
+    "short": "Distribute benefits and harms fairly and impartially.",
+    "zh": "正義原則：公平且公正地分配利益與負擔。",
+    "groups": [
+      [
+        "fair",
+        "impartial",
+        "equitable"
+      ],
+      [
+        "benefits",
+        "rewards"
+      ],
+      [
+        "harms",
+        "burdens",
+        "costs"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "18"
+  },
+  {
+    "id": "c4-006",
+    "chapter": 4,
+    "term": "Practical rule",
+    "original": "Could the choice be disclosed and accepted under current social standards?",
+    "short": "Choose actions that can be openly explained and accepted by society.",
+    "zh": "實用原則：決策是否能公開且為社會接受。",
+    "groups": [
+      [
+        "disclose",
+        "public",
+        "open",
+        "explained"
+      ],
+      [
+        "accepted",
+        "acceptable",
+        "society",
+        "social"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "18"
+  },
+  {
+    "id": "c4-007",
+    "chapter": 4,
+    "term": "Tragedy of the commons",
+    "original": "Each actor gains by taking a little more; aggregate use exhausts the common resource and everyone loses.",
+    "short": "Individual overuse of a shared resource ultimately harms everyone.",
+    "zh": "共有資源悲劇：個體追求私益導致共有資源耗竭。",
+    "groups": [
+      [
+        "individual",
+        "self-interest",
+        "overuse"
+      ],
+      [
+        "shared",
+        "common"
+      ],
+      [
+        "resource"
+      ],
+      [
+        "deplete",
+        "exhaust",
+        "harm"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "20"
+  },
+  {
+    "id": "c4-008",
+    "chapter": 4,
+    "term": "Four sources of business ethics",
+    "original": "Societal ethics; occupational ethics; individual ethics; organizational ethics.",
+    "short": "Business ethics is shaped by societal, occupational, individual, and organizational ethics.",
+    "zh": "商業倫理四種來源：社會、職業、個人、組織。",
+    "groups": [
+      [
+        "societal"
+      ],
+      [
+        "occupational",
+        "professional"
+      ],
+      [
+        "individual",
+        "personal"
+      ],
+      [
+        "organizational"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "22"
+  },
+  {
+    "id": "c5-001",
+    "chapter": 5,
+    "term": "Diversity",
+    "original": "Diversity describes differences among people.",
+    "short": "Differences in employees’ identities, backgrounds, experiences, and abilities.",
+    "zh": "多樣性：人們在背景、身份、能力等面向的差異。",
+    "groups": [
+      [
+        "differences",
+        "variety"
+      ],
+      [
+        "people",
+        "employees"
+      ],
+      [
+        "background",
+        "identity",
+        "experience",
+        "ability"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "4–5"
+  },
+  {
+    "id": "c5-002",
+    "chapter": 5,
+    "term": "Inclusion",
+    "original": "Inclusion concerns how an organization responds to those differences.",
+    "short": "Ensuring different employees can participate, contribute, and receive fair opportunities.",
+    "zh": "共融：讓不同員工能公平參與、貢獻與發展。",
+    "groups": [
+      [
+        "participate",
+        "participation"
+      ],
+      [
+        "contribute",
+        "voice"
+      ],
+      [
+        "fair",
+        "opportunity"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "3–4"
+  },
+  {
+    "id": "c5-003",
+    "chapter": 5,
+    "term": "Distributive justice",
+    "original": "Pay, rewards, assignments, and promotion should reflect meaningful contribution and relevant needs.",
+    "short": "Fairness of how rewards and outcomes are allocated.",
+    "zh": "分配正義：結果和資源分配是否公平。",
+    "groups": [
+      [
+        "fair",
+        "fairness"
+      ],
+      [
+        "outcomes",
+        "rewards",
+        "allocation",
+        "distribution"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "12"
+  },
+  {
+    "id": "c5-004",
+    "chapter": 5,
+    "term": "Procedural justice",
+    "original": "Criteria, evidence, timing, and opportunities to be heard must be fair and job-relevant.",
+    "short": "Fairness of the procedures used to make decisions.",
+    "zh": "程序正義：決策過程和標準是否公平。",
+    "groups": [
+      [
+        "fair",
+        "fairness"
+      ],
+      [
+        "procedures",
+        "process",
+        "decision making"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "12"
+  },
+  {
+    "id": "c5-005",
+    "chapter": 5,
+    "term": "Perception",
+    "original": "Perception selects, organizes, and interprets information.",
+    "short": "Selecting, organizing, and interpreting information.",
+    "zh": "知覺：選取、組織、詮釋資訊，並非被動紀錄。",
+    "groups": [
+      [
+        "select"
+      ],
+      [
+        "organize"
+      ],
+      [
+        "interpret"
+      ],
+      [
+        "information"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "16"
+  },
+  {
+    "id": "c5-006",
+    "chapter": 5,
+    "term": "Schema",
+    "original": "A schema is a knowledge structure used to organize information.",
+    "short": "A mental knowledge structure for organizing and interpreting information.",
+    "zh": "基模：協助整理、解讀資訊的知識結構。",
+    "groups": [
+      [
+        "knowledge",
+        "mental"
+      ],
+      [
+        "structure",
+        "framework"
+      ],
+      [
+        "organize",
+        "interpret"
+      ],
+      [
+        "information"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "17"
+  },
+  {
+    "id": "c5-007",
+    "chapter": 5,
+    "term": "Stereotype",
+    "original": "A stereotype overgeneralizes a belief about a group to an individual.",
+    "short": "Applying an oversimplified group belief to an individual.",
+    "zh": "刻板印象：以對群體的過度概括判斷個體。",
+    "groups": [
+      [
+        "group"
+      ],
+      [
+        "individual",
+        "person"
+      ],
+      [
+        "generalize",
+        "oversimplified",
+        "assume"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "18"
+  },
+  {
+    "id": "c5-008",
+    "chapter": 5,
+    "term": "Implicit bias",
+    "original": "A manager may be unaware of a biased association yet let it affect whom they notice, trust, or rate as promising.",
+    "short": "An unconscious association that influences judgments or behavior.",
+    "zh": "隱性偏見：未察覺的聯想影響決策。",
+    "groups": [
+      [
+        "unconscious",
+        "unaware",
+        "implicit"
+      ],
+      [
+        "bias",
+        "association"
+      ],
+      [
+        "judgment",
+        "decisions",
+        "behavior"
+      ]
+    ],
+    "level": 2,
+    "source": "老師簡報",
+    "page": "20"
+  },
+  {
+    "id": "c5-009",
+    "chapter": 5,
+    "term": "Glass ceiling",
+    "original": "Invisible barriers that keep women or minorities from advancing to top roles.",
+    "short": "Invisible barriers preventing qualified women or minorities from reaching senior roles.",
+    "zh": "玻璃天花板：阻止女性或少數群體晉升的無形障礙。",
+    "groups": [
+      [
+        "invisible",
+        "unseen"
+      ],
+      [
+        "barriers",
+        "obstacles"
+      ],
+      [
+        "women",
+        "minorities"
+      ],
+      [
+        "promotion",
+        "advance",
+        "senior",
+        "top"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "22"
+  },
+  {
+    "id": "c7-001",
+    "chapter": 7,
+    "term": "Programmed decision",
+    "original": "An established rule or procedure handles a familiar, relatively unambiguous problem.",
+    "short": "A routine decision made using established rules or procedures.",
+    "zh": "例行性決策：對熟悉、重複問題使用既定程序。",
+    "groups": [
+      [
+        "routine",
+        "recurring",
+        "familiar",
+        "repeated"
+      ],
+      [
+        "rules",
+        "procedure",
+        "established"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "4"
+  },
+  {
+    "id": "c7-002",
+    "chapter": 7,
+    "term": "Nonprogrammed decision",
+    "original": "An unusual opportunity or threat has no ready rule; managers must define the problem, develop options, and judge consequences with incomplete information.",
+    "short": "A novel, nonroutine decision requiring judgment without an established rule.",
+    "zh": "非例行性決策：新穎問題，無既定規則可套用。",
+    "groups": [
+      [
+        "novel",
+        "new",
+        "unusual",
+        "nonroutine"
+      ],
+      [
+        "judgment",
+        "decision",
+        "alternatives"
+      ],
+      [
+        "no rule",
+        "without rules",
+        "no established"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "4"
+  },
+  {
+    "id": "c7-003",
+    "chapter": 7,
+    "term": "Classical model of decision making",
+    "original": "The classical model prescribes a fully rational choice among alternatives under ideal conditions.",
+    "short": "Assumes complete information and rational selection of the optimal alternative.",
+    "zh": "古典決策模型：理想條件下有完整資訊並選最優方案。",
+    "groups": [
+      [
+        "complete information",
+        "full information"
+      ],
+      [
+        "rational"
+      ],
+      [
+        "optimal",
+        "best"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "6"
+  },
+  {
+    "id": "c7-004",
+    "chapter": 7,
+    "term": "Bounded rationality",
+    "original": "Managers cannot obtain every fact or process every possible alternative; attention, memory, time, and resources are limited.",
+    "short": "Human decision making is limited by information, time, and cognitive capacity.",
+    "zh": "有限理性：資訊、時間與認知處理能力皆有限。",
+    "groups": [
+      [
+        "limited",
+        "constraints",
+        "limits"
+      ],
+      [
+        "information"
+      ],
+      [
+        "time",
+        "attention",
+        "cognitive",
+        "processing"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7"
+  },
+  {
+    "id": "c7-005",
+    "chapter": 7,
+    "term": "Administrative model",
+    "original": "Managers often seek a solution that meets an acceptable threshold—satisficing—rather than proving that it is the best imaginable choice.",
+    "short": "Under bounded rationality, managers satisfice rather than optimize.",
+    "zh": "行政決策模型：接受夠好的方案，而非追求理想最優。",
+    "groups": [
+      [
+        "bounded rationality",
+        "limits",
+        "limited"
+      ],
+      [
+        "satisfice",
+        "satisficing",
+        "satisfactory",
+        "good enough"
+      ],
+      [
+        "rather than optimize",
+        "not optimal",
+        "instead of optimal"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "7"
+  },
+  {
+    "id": "c7-006",
+    "chapter": 7,
+    "term": "Risk",
+    "original": "Possible outcomes and their probabilities can be estimated.",
+    "short": "A situation where possible outcomes and their probabilities can be estimated.",
+    "zh": "風險：可能結果及其機率可估算。",
+    "groups": [
+      [
+        "outcomes",
+        "consequences"
+      ],
+      [
+        "probabilities",
+        "likelihood"
+      ],
+      [
+        "estimated",
+        "known",
+        "estimate"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8"
+  },
+  {
+    "id": "c7-007",
+    "chapter": 7,
+    "term": "Uncertainty",
+    "original": "Outcome probabilities cannot be determined; the future remains unknown.",
+    "short": "A situation in which outcome probabilities cannot be reliably determined.",
+    "zh": "不確定性：結果機率無法合理確定。",
+    "groups": [
+      [
+        "probabilities",
+        "likelihood"
+      ],
+      [
+        "cannot",
+        "unknown",
+        "unavailable",
+        "uncertain"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "8"
+  },
+  {
+    "id": "c7-008",
+    "chapter": 7,
+    "term": "Six steps of decision making",
+    "original": "Recognize the need; generate alternatives; assess alternatives; choose; implement; learn from feedback.",
+    "short": "Recognize need → Generate alternatives → Assess → Choose → Implement → Learn from feedback.",
+    "zh": "六步驟：確認需要、提出方案、評估、選擇、執行、回饋學習。",
+    "groups": [
+      [
+        "recognize",
+        "identify"
+      ],
+      [
+        "generate",
+        "develop"
+      ],
+      [
+        "assess",
+        "evaluate"
+      ],
+      [
+        "choose",
+        "select"
+      ],
+      [
+        "implement"
+      ],
+      [
+        "feedback",
+        "learn"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "11"
+  },
+  {
+    "id": "c7-009",
+    "chapter": 7,
+    "term": "Four criteria for assessing alternatives",
+    "original": "Legal? Ethical? Economic? Practical?",
+    "short": "Evaluate whether each alternative is legal, ethical, economic, and practical.",
+    "zh": "方案四標準：合法、倫理、經濟、可執行。",
+    "groups": [
+      [
+        "legal"
+      ],
+      [
+        "ethical"
+      ],
+      [
+        "economic"
+      ],
+      [
+        "practical"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "13"
+  },
+  {
+    "id": "c7-010",
+    "chapter": 7,
+    "term": "Confirmation bias",
+    "original": "Favor information consistent with what you already think and discount contradictory evidence.",
+    "short": "Favoring information that supports existing beliefs while ignoring contrary evidence.",
+    "zh": "確認偏誤：偏好符合原想法的證據。",
+    "groups": [
+      [
+        "favor",
+        "seek",
+        "select"
+      ],
+      [
+        "existing beliefs",
+        "beliefs",
+        "prior beliefs"
+      ],
+      [
+        "contradictory",
+        "opposing",
+        "contrary",
+        "ignore"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "19"
+  },
+  {
+    "id": "c7-011",
+    "chapter": 7,
+    "term": "Representativeness bias",
+    "original": "Treat a small or vivid example as though it reliably describes the wider population.",
+    "short": "Generalizing from a small or vivid sample to a larger population.",
+    "zh": "代表性偏誤：用少數醒目樣本推論整體。",
+    "groups": [
+      [
+        "small",
+        "vivid",
+        "limited"
+      ],
+      [
+        "sample",
+        "example"
+      ],
+      [
+        "generalize",
+        "population",
+        "representative"
+      ]
+    ],
+    "level": 3,
+    "source": "老師簡報",
+    "page": "19"
+  }
+];const CH=[1,2,3,4,5,7];const KEY='iim3113-management-v1';let db={records:{},extra:[],includeAI:false,dark:false};try{const raw=localStorage.getItem(KEY);if(raw){const d=JSON.parse(raw);db={...db,...d}}}catch(e){}let active='home',flashIndex=0,flashBack=false,quizItem=null,quizAttempt=0,firstFeedback=null,quizKind='quiz',lastPicked=[],lastRenderIds=[];let filter={chapters:[...CH],level:0,weak:false,mode:'all'};const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));function save(){try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){alert('瀏覽器儲存失敗，請匯出 JSON 備份')}}const today=()=>new Date().toLocaleDateString('en-CA');const record=id=>db.records[id]||{views:0,attempts:0,history:[],mastered:false,needsReview:false,lastResult:'尚未練習',lastDate:null};const all=()=>[...BASE,...db.extra.filter(x=>x.source!=='AI 補充'||db.includeAI)];function stats(items){const learned=items.filter(x=>record(x.id).attempts>0).length,mastered=items.filter(x=>record(x.id).mastered).length;return {total:items.length,learned,mastered,notMastered:items.length-mastered,pct:items.length?Math.round(mastered/items.length*100):0}}function star(n){return '★'.repeat(n)}function tag(x){return `Ch. ${x.chapter} · ${star(x.level)} · ${esc(x.source)}`}function listFiltered(){return all().filter(x=>filter.chapters.includes(x.chapter)&&(!filter.level||x.level===filter.level)&&(!filter.weak||!record(x.id).mastered))}function filterHTML(){return `<div class="filters"><div class="small">選擇章節（可多選）</div><div class="checks">${CH.map(ch=>`<label><input type="checkbox" class="chapterCheck" value="${ch}" ${filter.chapters.includes(ch)?'checked':''}> Ch. ${ch}</label>`).join('')}</div><div class="stack" style="margin-top:10px"><label class="small">重要性 <select id="levelChoice" class="input" style="width:auto"><option value="0">全部星級</option><option value="3" ${filter.level===3?'selected':''}>★★★ 必背</option><option value="2" ${filter.level===2?'selected':''}>★★ 熟悉</option><option value="1" ${filter.level===1?'selected':''}>★ 略讀</option></select></label><label class="small"><input type="checkbox" id="weakChoice" ${filter.weak?'checked':''}> 只看尚未熟練</label></div></div>`}function mountFilters(){['flashFilters','quizFilters','libFilters'].forEach(id=>{$(id).innerHTML=filterHTML();$(id).querySelectorAll('.chapterCheck').forEach(c=>c.addEventListener('change',()=>{filter.chapters=[...new Set([...document.querySelectorAll('#'+id+' .chapterCheck:checked')].map(x=>Number(x.value)))];refresh()}));$(id).querySelector('#levelChoice').onchange=e=>{filter.level=Number(e.target.value);refresh()};$(id).querySelector('#weakChoice').onchange=e=>{filter.weak=e.target.checked;refresh()}})}function go(p){active=p;document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===p));document.querySelectorAll('[data-go]').forEach(x=>x.classList.toggle('active',x.dataset.go===p));scrollTo(0,0);refresh()}function home(){const total=stats(all()),due=new Date('2026-10-29T00:00:00+08:00'),now=new Date(),days=Math.max(0,Math.ceil((due-now)/864e5));$('days').textContent=days;$('dataInfo').innerHTML=`目前 ${all().length} 題已核對的簡報來源名詞；<b>學長 PDF 尚未成功讀取，學長原始題數未知</b>。已上傳英文書是第 12 版，並非課綱指定的第 13 版。重要程度為備考建議，非教授公布考點。`;$('summary').innerHTML=[[total.total,'題庫總數'],[total.learned,'已打字練習'],[total.mastered,'已熟練（'+total.pct+'%）']].map(x=>`<div class="card"><div class="stat">${x[0]}</div><div class="small">${x[1]}</div></div>`).join('');$('chapterStats').innerHTML=CH.map(ch=>{const v=stats(all().filter(x=>x.chapter===ch));return `<div class="card chapter" data-ch="${ch}"><div class="row"><strong>Chapter ${ch}</strong><span class="pill">${v.pct}%</span></div><div class="progress"><i style="width:${v.pct}%"></i></div><div class="small">總 ${v.total} · 已練 ${v.learned} · 熟練 ${v.mastered} · 尚未熟練 ${v.notMastered}</div></div>`}).join('');document.querySelectorAll('.chapter').forEach(x=>x.onclick=()=>{filter.chapters=[Number(x.dataset.ch)];go('library')})}function flashList(){return listFiltered()}function flash(){const items=flashList();$('flashCount').textContent=items.length+' 題';if(!items.length){$('flashCard').innerHTML='<div class="empty">這個篩選沒有題目</div>';return}flashIndex=(flashIndex+items.length)%items.length;const x=items[flashIndex];$('flashPos').textContent=`${flashIndex+1} / ${items.length} · ${tag(x)}`;$('flashCard').innerHTML=flashBack?`<div class="tagline">${tag(x)} · 講義第 ${esc(x.page)} 頁</div><h3>${esc(x.term)}</h3><div class="english">${esc(x.short)}</div><p>${esc(x.zh)}</p><div class="small">必備概念：${esc(x.groups.map(g=>g[0]).join(' / '))}</div><div class="small">點擊返回正面</div>`:`<div class="small">請先在腦中默寫英文定義</div><div class="term">${esc(x.term)}</div><div class="small">點擊翻面看答案</div>`}function norm(s){return String(s||'').toLowerCase().normalize('NFKC').replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim()}function grade(x,answer){const n=' '+norm(answer)+' ';const matched=x.groups.map(g=>g.some(y=>n.includes(' '+norm(y)+' ')));return {matched,miss:x.groups.filter((g,i)=>!matched[i]).map(g=>g[0]),passed:matched.every(Boolean),hit:matched.filter(Boolean).length,total:matched.length}}function pool(){return listFiltered().map(x=>{const r=record(x.id);return {x,weight:(r.mastered?0.15:2)+(r.needsReview?5:0)+(r.attempts===0?2:0)+Math.max(0,3-r.attempts)}}).filter(z=>!lastPicked.includes(z.x.id)||listFiltered().length<=4)}function chooseQuiz(){const a=pool(),arr=a.length?a:listFiltered().map(x=>({x,weight:1}));if(!arr.length){quizItem=null;return}const total=arr.reduce((s,x)=>s+x.weight,0);let t=Math.random()*total;let obj=arr.find(x=>(t-=x.weight)<=0)||arr.at(-1);quizItem=obj.x;lastPicked.push(quizItem.id);lastPicked=lastPicked.slice(-Math.min(6,Math.max(0,listFiltered().length-1)));quizAttempt=0;firstFeedback=null}function quiz(){if(!quizItem||!listFiltered().some(x=>x.id===quizItem.id))chooseQuiz();$('quizCount').textContent=listFiltered().length+' 題';if(!quizItem){$('quizArea').innerHTML='<div class="empty">沒有符合條件的題目。請重新選擇章節。</div>';return}const x=quizItem,r=record(x.id);$('quizMeta').textContent=tag(x)+' · 已練 '+r.attempts+' 次';const mode=quizKind==='mix'?'混合回想':'英文定義回想';$('quizArea').innerHTML=`<span class="pill">${mode} · 第 ${quizAttempt===0?1:quizAttempt===1?2:2} 次機會</span><div class="term">${esc(x.term)}</div><div class="small">不用逐字背，請用英文寫出核心概念；評分只依關鍵字／片語規則。</div><div class="control"><textarea id="answer" placeholder="Type your English definition here..." ${quizAttempt>=2?'disabled':''}></textarea></div><div id="feedbackArea"></div><div class="row"><button class="btn primary" id="submit" ${quizAttempt>=2?'disabled':''}>${quizAttempt===1?'第二次提交':'第一次提交'}</button><button class="btn" id="skip">跳過／下一題 →</button></div>`;$('submit').onclick=submitQuiz;$('skip').onclick=()=>{chooseQuiz();quiz()};if(firstFeedback&&quizAttempt===1)$('feedbackArea').innerHTML=`<div class="feedback"><b>第一次提示：${firstFeedback.hit}/${firstFeedback.total} 個概念</b><p class="warn">待補：${esc(firstFeedback.miss.join(' / ')||'無')}</p><div class="small">修正後再送出，尚未公布完整答案。</div></div>`}function submitQuiz(){const x=quizItem,a=$('answer').value.trim();if(!a){alert('請先輸入英文答案');return}const g=grade(x,a);quizAttempt++;const r={...record(x.id)};r.attempts++;r.history=[{date:new Date().toISOString(),answer:a,passed:g.passed,match:`${g.hit}/${g.total}`},...(r.history||[])].slice(0,3);r.lastDate=today();r.lastResult=g.passed?'通過':'未通過';r.mastered=g.passed;r.needsReview=!g.passed;db.records[x.id]=r;save();if(quizAttempt===1&&!g.passed){firstFeedback=g;quiz();$('answer').value=a;return}$('answer').value=a;$('answer').disabled=true;$('submit').disabled=true;$('feedbackArea').innerHTML=`<div class="feedback"><strong>${g.passed?'關鍵概念通過':'仍需加強'} · ${g.hit}/${g.total}</strong><p>不足概念：${esc(g.miss.join(' / ')||'無')}</p><div class="small">標準精簡英文定義</div><div class="english">${esc(x.short)}</div><details><summary>較完整講義內容表述（可能經摘述）</summary>${esc(x.original)}</details><div class="small">${esc(x.zh)} · 來源：${esc(x.source)}／Ch. ${x.chapter} p.${esc(x.page)}</div><p class="small">${quizAttempt===1?'第一次即通過；':'兩次作答結束；'}這是固定字詞比對，不具備語意評分能力。必要時自行核對意思。</p></div>`;quizAttempt=2;refreshStatsOnly()}function refreshStatsOnly(){home();review(false)}function library(){const s=norm($('searchTerm').value);const list=listFiltered().filter(x=>!s||norm(x.term+' '+x.short+' '+x.zh).includes(s));$('libCount').textContent=list.length+' 題';$('libraryRows').innerHTML=list.length?list.map(x=>`<div class="library-row"><div class="row"><strong>${esc(x.term)}</strong><span class="pill">Ch. ${x.chapter} · ${star(x.level)}</span></div><div class="tagline">${esc(x.source)} · p.${esc(x.page)} · ${esc(record(x.id).lastResult)}</div><details class="termDetail" ${showAll?'open':''}><summary>查看定義、關鍵概念與答題紀錄</summary><p class="english">${esc(x.short)}</p><div class="small">講義內容表述／整理：${esc(x.original)}</div><p>${esc(x.zh)}</p><div class="small">關鍵概念：${esc(x.groups.map(g=>g.join(' / ')).join('；'))}</div>${record(x.id).history?.length?`<p class="small">最近 ${record(x.id).history.length} 次：${record(x.id).history.map(h=>esc(h.match)).join('、')}</p>`:''}<button class="btn" data-test="${x.id}">測這一題</button></details></div>`).join(''):'<div class="empty">沒有符合條件的題目</div>';$('libraryRows').querySelectorAll('[data-test]').forEach(b=>b.onclick=()=>{quizItem=all().find(x=>x.id===b.dataset.test);filter.chapters=[quizItem.chapter];filter.weak=false;filter.level=0;quizAttempt=0;go('quiz')})}let showAll=false;
+const NOTE={1:{heading:'Managerial Performance',tree:[['POLC｜四大管理功能','Planning → Organizing → Leading → Controlling；四項功能相互依賴並透過 feedback 改善。'],['Performance｜績效','Efficiency = efficient resource use；Effectiveness = appropriate goals achieved。'],['Mintzberg’s roles｜管理角色','Decisional: Entrepreneur, Disturbance handler, Resource allocator, Negotiator；Interpersonal: Figurehead, Leader, Liaison；Informational: Monitor, Disseminator, Spokesperson。'],['Levels & skills｜管理層級與技能','First-line / Middle / Top；Technical / Human / Conceptual。']],compare:[['Efficiency','Productive use of resources','Efficiency asks how resources are used.'],['Effectiveness','Choosing and achieving appropriate goals','Effectiveness asks whether the right goals are met.']],prompts:['Explain the four functions of management and how they are interrelated.','Compare efficiency with effectiveness and give an example.']},2:{heading:'Evolution of Management Thought',tree:[['Scientific management','Taylor’s four principles：Study → Codify → Fit & train → Share gains；重點在人與任務。'],['Administrative management','Weber: Bureaucracy；Fayol: 14 principles，老師簡報分成 design work / arrange authority / coordinate direction / build commitment。'],['Behavioral management','Follett → Hawthorne studies → Informal organization → Theory X / Theory Y。'],['Management science & environment','管理科學與環境觀點可在 Ch.2 後續課堂頁面繼續核對。']],compare:[['Scientific management','Task-level efficiency','Studies people–task relationships.'],['Administrative management','Organization-level design','Structures authority and coordination.'],['Theory X','Close supervision','Assumes workers avoid responsibility.'],['Theory Y','Employee self-direction','Assumes workers can take responsibility.']],prompts:['Compare scientific management and administrative management.','Explain Theory X and Theory Y and their implications for managerial behavior.']},3:{heading:'Manager as a Person',tree:[['Personality','Big Five；Internal vs. External locus of control；Achievement / Affiliation / Power。'],['Values','Terminal values = desired ends；Instrumental values = preferred conduct。'],['Attitudes','Job satisfaction = feelings about the job；Organizational commitment = feelings toward the organization。'],['Affect & culture','Mood vs. Emotion；Emotional intelligence；individual traits and shared culture influence each other。']],compare:[['Terminal value','Desired end goal','What to achieve.'],['Instrumental value','Preferred behavior','How to behave.'],['Mood','Diffuse, longer-lasting','Not necessarily tied to a specific event.'],['Emotion','Intense, short-lived','Often triggered by a specific event.']],prompts:['List the Big Five personality traits and explain why no single trait guarantees managerial success.','Distinguish job satisfaction from organizational commitment.']},4:{heading:'Ethics and Social Responsibility',tree:[['Ethical judgment','Ethics vs. Law；ethical dilemmas and competing stakeholder claims。'],['Four ethical rules','Utilitarian → Moral rights → Justice → Practical；這是四項決策準則。'],['Four sources of business ethics','Societal / Occupational / Individual / Organizational ethics；這是四個來源，不可和四準則混淆。'],['Ethical systems','Trust, reputation, stakeholder claims, managerial leadership and accountability。']],compare:[['Utilitarian rule','Greatest overall good','Consequences.'],['Moral rights rule','Protect fundamental rights','Rights.'],['Justice rule','Fair distribution','Fairness.'],['Practical rule','Publicly defensible action','Social acceptability.']],prompts:['Explain the four ethical decision-making rules and apply them to an outsourcing decision.','Explain the difference between the four sources of business ethics and the four ethical rules.']},5:{heading:'Diversity and Fairness',tree:[['Diversity vs. Inclusion','Diversity = people differ；Inclusion = participation, opportunity and voice。'],['Justice','Distributive justice = outcomes；Procedural justice = process。'],['Perception pathway','Perception → Schema → Stereotype / Implicit bias → unfair judgment。'],['Managerial response','Specify criteria → Document evidence → Compare consistently → Challenge assumptions；remove glass ceiling barriers。']],compare:[['Diversity','Differences among employees','Representation.'],['Inclusion','Fair participation and opportunities','Response to differences.'],['Distributive justice','Fair allocation of outcomes','What people receive.'],['Procedural justice','Fair decision-making process','How decisions are made.']],prompts:['Compare distributive and procedural justice with an employee promotion example.','Explain how schemas and stereotypes can distort managerial decisions.']},7:{heading:'Decision Making and Learning',tree:[['Decision types','Programmed vs. Nonprogrammed；routine vs. novel。'],['Decision models','Classical model = optimizing under ideal information；Administrative model = bounded rationality and satisficing。'],['Six steps','Recognize need → Generate alternatives → Assess → Choose → Implement → Learn from feedback。'],['Evaluation & bias','Legal / Ethical / Economic / Practical；Confirmation bias and Representativeness bias。']],compare:[['Risk','Probabilities can be estimated','Known or estimable likelihoods.'],['Uncertainty','Probabilities cannot be determined','Unknown likelihoods.'],['Classical model','Optimize','Ideal complete information.'],['Administrative model','Satisfice','Limited rationality and information.']],prompts:['Compare the classical and administrative models of decision making.','Describe the six steps of managerial decision making and explain why feedback matters.']}};
+function notes(){const a=CH.filter(c=>filter.chapters.includes(c));$('notesBody').innerHTML=a.map(ch=>{let n=NOTE[ch];return `<div class="card" style="margin-bottom:13px"><h3>Chapter ${ch} · ${n.heading}</h3><div class="tagline">展開節點閱讀中文架構＋英文關鍵詞</div>${n.tree.map(t=>`<details><summary>${esc(t[0])}</summary><p>${esc(t[1])}</p></details>`).join('')}<details><summary>概念比較表</summary><div class="tablewrap"><table><thead><tr><th>Concept</th><th>Core meaning</th><th>Exam keywords</th></tr></thead><tbody>${n.compare.map(t=>`<tr>${t.map(y=>`<td>${esc(y)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></details><details><summary>英文手寫簡答／長答題</summary>${n.prompts.map((p,i)=>`<p><b>Q${i+1}.</b> ${esc(p)}</p><p class="small">建議架構：Definition → Key elements → Comparison / Analysis → Example。請以英文手寫作答，這個離線版本不會自動替長答語意評分。</p>`).join('')}</details></div>`}).join('')}
+function review(render=true){let items=all(),v=stats(items),wrong=items.filter(x=>{const r=record(x.id);return r.needsReview||r.attempts>0&&!r.mastered});$('reviewStats').innerHTML=[[v.pct+'%','總熟練率'],[wrong.length,'曾練但未熟練'],[items.filter(x=>record(x.id).attempts===0).length,'尚未打字練習']].map(x=>`<div class="card"><div class="stat">${x[0]}</div><div class="small">${x[1]}</div></div>`).join('');$('wrongRows').innerHTML=wrong.length?wrong.map(x=>`<div class="library-row row"><div><b>${esc(x.term)}</b><div class="small">Ch. ${x.chapter} · 最近結果：${esc(record(x.id).lastResult)} · ${record(x.id).attempts} 次</div></div><button class="btn" data-wrong="${x.id}">重練</button></div>`).join(''):'<div class="empty">目前沒有已作答且未熟練的錯題</div>';$('wrongRows').querySelectorAll('[data-wrong]').forEach(b=>b.onclick=()=>{filter.chapters=CH.slice();filter.weak=false;quizItem=all().find(x=>x.id===b.dataset.wrong);quizAttempt=0;go('quiz')});$('includeAI').checked=db.includeAI;const count=src=>[...BASE,...db.extra].filter(x=>x.source===src).length;$('sourceCounts').textContent=`來源統計：老師簡報 ${count('老師簡報')} 題；學長筆記 ${count('學長筆記')} 題；AI 補充 ${count('AI 補充')} 題。`}
+function refresh(){mountFilters();home();flash();quiz();library();notes();review()}document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{if(b.dataset.mode){quizKind=b.dataset.mode;chooseQuiz()}go(b.dataset.go)});$('themeBtn').onclick=()=>{db.dark=!db.dark;document.body.classList.toggle('dark',db.dark);save()};document.body.classList.toggle('dark',db.dark);$('flashCard').onclick=()=>{flashBack=!flashBack;flash()};$('flashCard').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('flashCard').click()}};$('nextFlash').onclick=()=>{flashIndex++;flashBack=false;flash()};$('prevFlash').onclick=()=>{flashIndex--;flashBack=false;flash()};$('shuffleFlash').onclick=()=>{flashIndex=Math.floor(Math.random()*Math.max(1,flashList().length));flashBack=false;flash()};$('markWeak').onclick=()=>{const x=flashList()[flashIndex];if(!x)return;db.records[x.id]={...record(x.id),views:record(x.id).views+1,needsReview:true,mastered:false};save();flashIndex++;flashBack=false;refreshStatsOnly();flash()};$('newQuiz').onclick=()=>{chooseQuiz();quiz()};$('searchTerm').oninput=library;$('expandLibrary').onclick=()=>{showAll=!showAll;$('expandLibrary').textContent=showAll?'收合全部':'顯示全部定義';library()};$('includeAI').onchange=e=>{db.includeAI=e.target.checked;save();refresh()};function download(obj,name){const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}$('exportBtn').onclick=()=>download({format:'IIM3113 Management Backup',version:1,exportedAt:new Date().toISOString(),data:db},'Management-Exam-Prep-backup.json');$('importInput').onchange=async e=>{try{const j=JSON.parse(await e.target.files[0].text());if(j.format!=='IIM3113 Management Backup'||!j.data?.records)throw Error('不是本系統備份');if(confirm('確定覆蓋目前本機紀錄？')){db={...db,...j.data};save();refresh()}}catch(ex){alert('匯入失敗：'+ex.message)}e.target.value=''};$('bankInput').onchange=async e=>{try{const j=JSON.parse(await e.target.files[0].text());if(!Array.isArray(j))throw Error('題庫必須為 JSON 陣列');const parsed=j.map((x,i)=>{if(!CH.includes(Number(x.chapter))||!x.term||!x.original||!x.short||!x.zh||!Array.isArray(x.groups)||!x.groups.every(g=>Array.isArray(g)&&g.length)||!['學長筆記','AI 補充'].includes(x.source))throw Error(`第 ${i+1} 題格式不符`);return {...x,id:'ext-'+norm(x.term).replace(/ /g,'-')+'-'+x.chapter,chapter:Number(x.chapter),level:[1,2,3].includes(Number(x.level))?Number(x.level):2}});db.extra=[...db.extra.filter(x=>!parsed.some(y=>y.id===x.id)),...parsed];save();refresh();alert(`已匯入 ${parsed.length} 題`)}catch(ex){alert('匯入失敗：'+ex.message)}e.target.value=''};$('resetBtn').onclick=()=>{if(confirm('清除所有本機練習紀錄？題庫不會刪除。')){db.records={};save();refresh()}};chooseQuiz();refresh();
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) { window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(console.warn));}
+</script></body></html>
